@@ -1,4 +1,4 @@
-Create Documentation with RST, Sphinx, Sublime, and GitHub
+Documentation and Notes for Anh Huy
 ############################################################
 
 This project captures guidelines and tips for efficiently creating
@@ -11,13 +11,13 @@ This document is geared towards content creators, not programmers.
 
 Contributions are welcome in the :xref:`GitHub Project`.
 
-Get Started 
+OpenBmc How To
 ***********************
 
 .. toctree::
    :maxdepth: 1
 
-   setup
+   opennbmc_how_to
    create_project
    glossary_terms
 
