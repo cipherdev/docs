@@ -17,8 +17,8 @@ details and a list of HTTP exchanges that have taken place for the integration,
 including the Payload URL needed by the repository provider
 such as GitHub, GitLab, or Bitbucket.
 
-Integration Creation
---------------------
+Docker
+-------
 
 If you have :doc:`connected your Read the Docs account </connected-accounts>` to GitHub, Bitbucket, or GitLab,
 **an integration will be set up automatically for your repository**. However, if your
@@ -41,8 +41,8 @@ Use this URL when setting up a new integration with your provider -- these steps
 
 .. _webhook-integration-github:
 
-GitHub
-~~~~~~
+Dockerfile
+~~~~~~~~~~
 
 * Go to the :guilabel:`Settings` page for your **GitHub project**
 * Click :guilabel:`Webhooks` > :guilabel:`Add webhook`
@@ -65,8 +65,8 @@ For a 403 error, it's likely that the Payload URL is incorrect.
 
 .. _webhook-integration-bitbucket:
 
-Bitbucket
-~~~~~~~~~
+Docker Network
+~~~~~~~~~~~~~~
 
 * Go to the :guilabel:`Settings` > :guilabel:`Webhooks` > :guilabel:`Add webhook` page for your project
 * For **URL**, use the URL of the integration on Read the Docs,
@@ -76,8 +76,8 @@ Bitbucket
 
 .. _webhook-integration-gitlab:
 
-GitLab
-~~~~~~
+Docker Build
+~~~~~~~~~~~~
 
 * Go to the :guilabel:`Settings` > :guilabel:`Webhooks` page for your GitLab project
 * For **URL**, use the URL of the integration on **Read the Docs project**,
