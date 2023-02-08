@@ -238,7 +238,7 @@ Modified Source & Compile
 -------------------------
 From bb file
 ~~~~~~~~~~~~
-Ex: For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://github.com/openbmc/webui-vue/>`__
+For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://github.com/openbmc/webui-vue/>`__
 
 Now edit file: openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb::
 
