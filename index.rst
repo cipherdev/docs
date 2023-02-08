@@ -173,74 +173,22 @@ inside Git_, Subversion_, Mercurial_, or Bazaar_.
 .. _Mercurial: http://hgbook.red-bean.com/read/handling-repository-events-with-hooks.html
 .. _Bazaar: http://wiki.bazaar.canonical.com/BzrHooks
 
-Authentication
-~~~~~~~~~~~~~~
-
-This endpoint requires authentication. If authenticating with an integration
-token, a check will determine if the token is valid and matches the given
-project. If instead an authenticated user is used to make this request, a check
-will be performed to ensure the authenticated user is an owner of the project.
-
-Debugging webhooks
-------------------
-
-If you are experiencing problems with an existing webhook, you may be able to
-use the integration detail page to help debug the issue. Each project
-integration, such as a webhook or the generic API endpoint, stores the HTTP
-exchange that takes place between Read the Docs and the external source. You'll
-find a list of these exchanges in any of the integration detail pages.
-
-Resyncing webhooks
-------------------
-
-It might be necessary to re-establish a webhook if you are noticing problems.
-To resync a webhook from Read the Docs, visit the integration detail page and
-follow the directions for re-syncing your repository webhook.
-
-Payload validation
-------------------
-
-If your project was imported through a connected account,
-we create a secret for every integration that offers a way to verify that a webhook request is legitimate.
-Currently, `GitHub <https://developer.github.com/webhooks/securing/>`__ and `GitLab <https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#validate-payloads-by-using-a-secret-token>`__
-offer a way to check this.
-
-Troubleshooting
----------------
-
-Webhook activation failed. Make sure you have the necessary permissions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you find this error,
-make sure your user has permissions over the repository.
-In case of GitHub,
-check that you have granted access to the Read the Docs `OAuth App`_ to your organization.
-
-.. _OAuth App: https://github.com/settings/applications
-
-My project isn't automatically building
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If your project isn't automatically building, you can check your integration on
-Read the Docs to see the payload sent to our servers. If there is no recent
-activity on your Read the Docs project webhook integration, then it's likely
-that your VCS provider is not configured correctly. If there is payload
-information on your Read the Docs project, you might need to verify that your
-versions are configured to build correctly.
-
-Either way, it may help to either resync your webhook integration (see
-`Resyncing webhooks`_ for information on this process), or set up an entirely
-new webhook integration.
 
 OpenBmc How To
 ==============
 Modified Source & Compile
 -------------------------
-OpenBmc Bitbake Compile
+OpenBmc Compile
+~~~~~~~~~~~~~~~~~~~~~~~
 
+Bitbake Compile::
 
-From bb file
+    . setup <platform> <folder_build>
+    bitbake obmc-phosphor-image
+
+From bb File
 ~~~~~~~~~~~~
+
 For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://github.com/openbmc/webui-vue/>`__
 
 Bellow, edit file :guilabel:`openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb`::
@@ -248,12 +196,15 @@ Bellow, edit file :guilabel:`openbmc/meta-phosphor/recipes-phosphor/webui/webui-
     SRC_URI = "git://<path>/webui-vue;protocol=file;branch=<name_of_branch>"
     SRCREV = "${AUTOREV}"
 
-.. Note:: Can be replaced with **commitid** ex: ``SRCREV = "<commit_id>"``
+.. Note:: Can be replace by **commitID** by: ``SRCREV = "<commit_id>"``, with ``SRCREV = "${AUTOREV}"`` will get the latest code to compile.
 
-Use devtool tool
+Use devtool Tool
 ~~~~~~~~~~~~~~~~
 
 For example::
   
     devtool modify obmc-phosphor-buttons 
     devtool reset obmc-phosphor-buttons 
+
+Troubleshooting
+---------------
