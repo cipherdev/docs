@@ -231,3 +231,14 @@ versions are configured to build correctly.
 Either way, it may help to either resync your webhook integration (see
 `Resyncing webhooks`_ for information on this process), or set up an entirely
 new webhook integration.
+
+OpenBmc How To
+==============
+Modified Source & Compile
+-------------------------
+Change source from bb file
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ex: Modify source ``webui-vue`` from repo: `GitHub webui-vue<https://github.com/openbmc/webui-vue>`
+Edit at file: openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb
+SRC_URI = "git://<path>/webui-vue;protocol=file;branch=jira-11728"
+SRCREV = "${AUTOREV}"
