@@ -21,8 +21,6 @@ The table is displayed in HTML as:
    * - Row 2, column 1
      - Row 2, column 2
      - Row 2, column 3
-   * - Row 3, column 1
-     - Row 3, column 2
 
 CSV Files 
 ***********************
