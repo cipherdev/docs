@@ -1,15 +1,12 @@
-Documentation and Notes for Anh Huy
+Documentation and Notes
 ############################################################
 
 This project captures guidelines and tips for efficiently creating
-documentation using :term:`RST`, :term:`Sphinx`, :term:`Sublime Text`, and
-:term:`GitHub`.
+documentation using for me.
 
 This project is also created using the guidelines it describes.
 
 This document is geared towards content creators, not programmers.
-
-Contributions are welcome in the :xref:`GitHub Project`.
 
 OpenBmc How To
 ***********************
@@ -18,44 +15,28 @@ OpenBmc How To
    :maxdepth: 1
 
    opennbmc_how_to
-   create_project
-   glossary_terms
+   ipmi_commands
+   redfish_commands
 
-Set up Sublime 
-***********************
+Docker How To
+*************
 
 .. toctree::
    :maxdepth: 1
     
-   packages
-   editor_settings
-   sublime_macros
-   snippets
+   install_docker
+   docker_commands
+   docker_network
+   docker_compose
+   docker_swam
 
-Work with |RST| Content
+Work with |Notes| Content
 ***********************
 
 .. toctree::
    :maxdepth: 1
 
-   topics
-   indices
-   lists
-   notes_warnings
-   code_blocks
-   tables
-   references
-   images
-   videos
-   inline
-   conditions
-   glossary
-   reuse
-
-Manage Content in GitHub
-****************************
-
-TBP
+   git_commands
 
 Deliver Documentation
 ***********************
@@ -63,9 +44,8 @@ Deliver Documentation
 .. toctree::
    :maxdepth: 1
 
-   theme
-   styles
-   build
-   rtd
+   OpenBmc
+   Docker
+   Git
 
 .. add new files to list above to include them in toc
