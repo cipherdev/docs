@@ -236,9 +236,10 @@ OpenBmc How To
 ==============
 Modified Source & Compile
 -------------------------
-Change source from bb file
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-Ex: Modify source ``webui-vue`` from repo: `GitHub webui-vue<https://github.com/openbmc/webui-vue>`
-Edit at file: openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb
-SRC_URI = "git://<path>/webui-vue;protocol=file;branch=jira-11728"
-SRCREV = "${AUTOREV}"
+From bb file
+~~~~~~~~~~~~
+Ex: For example, modify source ``webui-vue`` from repo: `GitHub webui-vue<https://github.com/openbmc/webui-vue>`__
+Now edit file: openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb::
+
+    SRC_URI = "git://<path>/webui-vue;protocol=file;branch=jira-11728"
+    SRCREV = "${AUTOREV}"
