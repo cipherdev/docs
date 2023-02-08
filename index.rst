@@ -242,5 +242,5 @@ For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://g
 
 Now edit file: openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb::
 
-    SRC_URI = "git://<path>/webui-vue;protocol=file;branch=jira-11728"
+    SRC_URI = "git://<path>/webui-vue;protocol=file;branch=<name_of_branch>"
     SRCREV = "${AUTOREV}"
