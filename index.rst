@@ -236,6 +236,9 @@ OpenBmc How To
 ==============
 Modified Source & Compile
 -------------------------
+OpenBmc Bitbake Compile
+
+
 From bb file
 ~~~~~~~~~~~~
 For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://github.com/openbmc/webui-vue/>`__
@@ -244,3 +247,13 @@ Bellow, edit file :guilabel:`openbmc/meta-phosphor/recipes-phosphor/webui/webui-
 
     SRC_URI = "git://<path>/webui-vue;protocol=file;branch=<name_of_branch>"
     SRCREV = "${AUTOREV}"
+
+.. Note:: Can be replaced with **commitid** ex: ``SRCREV = "<commit_id>"``
+
+Use devtool tool
+~~~~~~~~~~~~~~~~
+
+For example::
+  
+    devtool modify obmc-phosphor-buttons 
+    devtool reset obmc-phosphor-buttons 
