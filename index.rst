@@ -37,6 +37,7 @@ Work with |Notes| Content
    :maxdepth: 1
 
    git_commands
+   tables
 
 Deliver Documentation
 ***********************
@@ -47,5 +48,6 @@ Deliver Documentation
    OpenBmc
    Docker
    Git
+   README
 
 .. add new files to list above to include them in toc
