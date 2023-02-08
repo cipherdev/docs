@@ -240,7 +240,7 @@ From bb file
 ~~~~~~~~~~~~
 For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://github.com/openbmc/webui-vue/>`__
 
-Now edit file: openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb::
+Bellow, edit file :guilable:`openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb`::
 
     SRC_URI = "git://<path>/webui-vue;protocol=file;branch=<name_of_branch>"
     SRCREV = "${AUTOREV}"
