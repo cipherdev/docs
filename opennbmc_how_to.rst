@@ -57,7 +57,10 @@ Example MACAddr b4:05:5d:e2:9a:87::
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power off
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power on
 
-* Set Policy Power Always-on via IPMI::
+Set Policy Power Always-on via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Command::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy always-on
 
