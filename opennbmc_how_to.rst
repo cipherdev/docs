@@ -43,15 +43,21 @@ FRU Info
 Update BMC MAC Address
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Example MACAddr b4:05:5d:e2:9a:87::
+* Command - Example MACAddr b4:05:5d:e2:9a:87::
 
     ipmitool raw 0x3c 0x01 0xb4 0x5 0x5d 0xe2 0x9a 0x87
 
-* Sensor sdr list::
+Sensor sdr list
+~~~~~~~~~~~~~~~~~
+
+* Command::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus sdr list all
 
-* Chassis Power Handle::
+Chassis Power Handle
+~~~~~~~~~~~~~~~~~~~~
+
+* Command::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis status
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power off
