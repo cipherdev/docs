@@ -31,6 +31,8 @@ For example::
     devtool modify obmc-phosphor-buttons 
     devtool reset obmc-phosphor-buttons
 
+------------------
+
 IPMI Tool Commands
 ------------------
 
@@ -58,7 +60,7 @@ Sensor sdr list
 Chassis BMC Reset Handle
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Command:
+* Command::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus mc reset cold
 
