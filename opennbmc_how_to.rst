@@ -34,13 +34,15 @@ For example::
 IPMI Tool Commands
 ------------------
 
-Check **FRU** info::
-~~~~~~~~~~~~~~~~~~~~
+FRU Info
+~~~~~~~~
 
-    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus fru print
+    .. code-block:: FRU
+        ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus fru print
 
-* Update BMC MAC Address 
-~~~~~~~~~~~~~~~~~~~~~~~~
+Update BMC MAC Address
+~~~~~~~~~~~~~~~~~~~~~~~
+
 Example MACAddr b4:05:5d:e2:9a:87::
 
     ipmitool raw 0x3c 0x01 0xb4 0x5 0x5d 0xe2 0x9a 0x87
