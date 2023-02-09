@@ -57,7 +57,7 @@ html_theme_options = {
     'navigation_depth': 5,
 }
 html_context = {
-    "display_github": False, # Add 'Edit on Github' link instead of 'View page source'
+    "display_github": False,
     "last_updated": True,
     "commit": False,
 }
