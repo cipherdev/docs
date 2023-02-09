@@ -37,8 +37,9 @@ IPMI Tool Commands
 FRU Info
 ~~~~~~~~
 
-    .. code-block:: FRU
-        ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus fru print
+* Command::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus fru print
 
 Update BMC MAC Address
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +58,7 @@ Sensor sdr list
 Chassis Power Handle
 ~~~~~~~~~~~~~~~~~~~~
 
-* Command::
+* Commands::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis status
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power off
@@ -70,26 +71,35 @@ Set Policy Power Always-on via IPMI
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy always-on
 
-* Set Policy Power Always-off via IPMI::
+Set Policy Power Always-off via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Command::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy always-off
 
-* Set Policy Power is previous via IPMI::
+Set Policy Power is previous via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Command:
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy previous
 
-* Set SOL activate via IPMI::
-    
+Set SOL activate via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Command:
+
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 sol activate instance=1
 
-* Set SOL deactivate via IPMI::
+Set SOL deactivate via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Command:
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 sol deactivate instance=1
 
-Parameters
-~~~~~~~~~~
-
-This endpoint accepts the following arguments during an HTTP POST:
+----------------
 
 branches
     The names of the branches to trigger builds for. This can either be an array
