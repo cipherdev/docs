@@ -40,7 +40,7 @@ These instructions apply to any Gitea instance.
 
    This isn't officially supported, but using the "GitHub webhook" is an effective workaround,
    because Gitea uses the same payload as GitHub. The generic webhook is not compatible with Gitea.
-   See `issue #8364`_ for more details. Official support may be implemented in the future.
+   See for more details. Official support may be implemented in the future.
 
 Parameters
 ~~~~~~~~~~
