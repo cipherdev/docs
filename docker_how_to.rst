@@ -9,7 +9,7 @@ Dockerfile
 .. code-block:: bash
 
   FROM ubuntu:18.04
-  LABEL maintainer="HuyLe <hule@amperecomputing.com>"
+  LABEL maintainer="HuyLe <anhhuy@live.com>"
   # Set Environment variables and Argument defaults.
   ENV HOME /root
   ARG BMC_IP=10.38.xx.xx
@@ -18,7 +18,7 @@ Dockerfile
   ENV DEBIAN_FRONTEND noninteractive
   # Define working directory.
   WORKDIR /root/dcmi/Source
-  # Add soure DCMI from: http://www.intel.com/content/dam/www/public/us/en/zip/ipdc-1-5-0-31-0-src.tar.gz
+  # Add soure files
   ADD ipdc-1-5-0-31-0-src.tgz /root/dcmi
   ADD dcmi_compile /root/dcmi_compile
   # Install libs
