@@ -2,7 +2,7 @@ Git Commands
 ###################
 
 
-You add images to |RST| with the ``.. image::`` directive:
+You add images to with the ``.. image::`` directive:
 
 .. code-block:: RST
   
@@ -15,7 +15,7 @@ For example this image:
 .. image:: images/get_started_sphinx.png
  :width: 600
 
-Is added to the |RST| file in by the following lines:
+Is added to the file in by the following lines:
 
 .. code-block:: RST
   

@@ -3,7 +3,7 @@
 Show Example Code 
 ###################
 
-To show example code, use the |RST| ``code-block`` directive:
+To show example code, use the ``code-block`` directive:
 
 .. code-block:: RST
 
@@ -94,7 +94,7 @@ the list of extensions in the ``conf.py`` file:
   extensions = ['sphinx.ext.autosectionlabel',
                 'sphinxcontrib.osexample']
 
-Then, to show multiple code examples with tabs, embed the code blocks under the ``.. example-code::`` directive.  The RST text for the code block example above is:
+Then, to show multiple code examples with tabs, embed the code blocks under the ``.. example-code::`` directive.  The text for the code block example above is:
 
 .. code-block:: RST
 
