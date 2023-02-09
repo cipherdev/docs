@@ -45,28 +45,28 @@ Dockerfile
   CMD ["bash"]
 
 Docker Commands
-------------
+---------------
 
 List All Images
 ~~~~~~~~~~~~~~~
 
 * Command::
 
-  docker images -aq
+    docker images -aq
 
 List All Container
 ~~~~~~~~~~~~~~~~~~
 
 * Command::
   
-  docker ps -aq
+    docker ps -aq
 
 Delete All Images|Container
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Command::
 
-  docker rm -vf $(docker ps -aq); docker rmi -f $(docker images -aq);
+    docker rm -vf $(docker ps -aq); docker rmi -f $(docker images -aq);
 
 .. note:: Be delete an image|container with: docker rm -vf <Image_ID>; docker rmi -f <Container_ID>;
 
@@ -75,18 +75,18 @@ Build an Image from Dockerfile
 
 * Command::
 
-  docker build -t <name_image> .
+    docker build -t <name_image> .
 
 Run Image With Mount & ENV
 
 * Command::
 
-  docker run -it -v /<host_folder>:/<folder_in_docker> \
-  -e ENV1=ABC \
-  -e ENV2=XYZ \
-  -e ENV3=NMB \
-  --name <name_container> <name_image> \
-  --no-cache .
+    docker run -it -v /<host_folder>:/<folder_in_docker> \
+    -e ENV1=ABC \
+    -e ENV2=XYZ \
+    -e ENV3=NMB \
+    --name <name_container> <name_image> \
+    --no-cache .
 
 Docker Network
 --------------
