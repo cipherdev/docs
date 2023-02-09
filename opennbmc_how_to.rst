@@ -34,7 +34,7 @@ For example::
 IPMI Tool Commands
 ------------------
 
-* Check FRU info::
+* Check **FRU** info::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus fru print
 
@@ -42,11 +42,35 @@ IPMI Tool Commands
 
     ipmitool raw 0x3c 0x01 0xb4 0x 0x5d 0xe2 0x9a 0x87
 
-* Check sensor sdr list:
-
-.. code-block:: ipmitool
+* Check sensor sdr list::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus sdr list all
+
+* Chassis handle::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis status
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power off
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power on
+
+* Set Policy Power Always-on via IPMI::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy always-on
+
+* Set Policy Power Always-off via IPMI::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy always-off
+
+* Set Policy Power is previous via IPMI::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy previous
+
+* Set SOL activate via IPMI::
+    
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 sol activate instance=1
+
+* Set SOL deactivate via IPMI::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 sol deactivate instance=1
 
 Parameters
 ~~~~~~~~~~
