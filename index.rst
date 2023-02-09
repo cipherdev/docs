@@ -23,7 +23,7 @@ Docker How To
 
 .. toctree::
    :maxdepth: 1
-    
+
    install_docker
    docker_commands
    docker_network
