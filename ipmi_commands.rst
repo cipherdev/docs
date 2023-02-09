@@ -64,28 +64,6 @@ You can have certain lines in an example highlighted line numbers to code exampl
 Code Examples in Multiple Languages
 *************************************
 
-You might want to show code examples in multiple languages. You can use the
-``sphinxcontrib-osexample`` extension to create code examples to be displayed
-in a tabbed list.  For example:
-
-.. example-code::
-
-  .. code-block:: JSON
-
-    {
-      "key": "value"
-    }
-
-  .. code-block:: python
-
-    pygments_style = 'sphinx'
-
-  
-  .. code-block:: ruby
-
-    print "Hello, World!\n"
-
-
 To enable tabs for multiple code examples, add ``sphinxcontrib.osexample`` to
 the list of extensions in the ``conf.py`` file:
 
