@@ -9,14 +9,12 @@ This project is also created using the guidelines it describes.
 This document is geared towards content creators, not programmers.
 
 OpenBmc How To
-***********************
+**************
 
 .. toctree::
    :maxdepth: 1
 
    opennbmc_how_to
-   ipmi_commands
-   redfish_commands
 
 Docker How To
 *************
@@ -24,20 +22,15 @@ Docker How To
 .. toctree::
    :maxdepth: 1
 
-   install_docker
-   docker_commands
-   docker_network
-   docker_compose
-   docker_swam
+   docker_how_to
 
-Work with Content
-*****************
+Git How To
+**********
 
 .. toctree::
    :maxdepth: 1
 
-   git_commands
-   tables
+   git_how_to
 
 Deliver Documentation
 **********************
@@ -48,6 +41,5 @@ Deliver Documentation
    OpenBmc
    Docker
    Git
-   README
 
 .. add new files to list above to include them in toc

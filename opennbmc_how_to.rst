@@ -120,38 +120,13 @@ Power_limit via IPMI
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 dcmi power set_limit limit <value>
 
-
 ----------------
 
-branches
-    The names of the branches to trigger builds for. This can either be an array
-    of branch name strings, or just a single branch name string.
-
-    Default: **latest**
-
-token
-    The integration token found on the project's **Integrations** dashboard page
-    (:guilabel:`Admin` > :guilabel:`Integrations`).
-
-default_branch
-    This is the default branch of the repository
-    (ie. the one checked out when cloning the repository without arguments)
-
-    *Optional*
-
-For example, the cURL command to build the ``dev`` branch, using the token
-``1234``, would be::
-
-    curl -X POST -d "branches=dev" -d "token=1234" -d "default_branch=main"
-    https://readthedocs.org/api/v2/webhook/example-project/1/
-
-A command like the one above could be called from a cron job or from a hook
-inside Git_, Subversion_, Mercurial_, or Bazaar_.
+A command like refer Git_, Subversion_, Mercurial_, or Bazaar_.
 
 .. _Git: http://www.kernel.org/pub/software/scm/git/docs/githooks.html
 .. _Subversion: https://www.mikewest.org/2006/06/subversion-post-commit-hooks-101
 .. _Mercurial: http://hgbook.red-bean.com/read/handling-repository-events-with-hooks.html
 .. _Bazaar: http://wiki.bazaar.canonical.com/BzrHooks
 
-Troubleshooting
 ---------------
