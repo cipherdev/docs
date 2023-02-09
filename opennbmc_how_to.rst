@@ -31,16 +31,15 @@ For example::
     devtool modify obmc-phosphor-buttons 
     devtool reset obmc-phosphor-buttons
 
-Docker Build
-------------
+IPMI Tool Commands
+------------------
 
-These instructions apply to any Gitea instance.
+* Check FRU info::
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus fru print
 
-.. warning::
+* Update BMC MAC Address for example MACAddr b4:05:5d:e2:9a:99::
 
-   This isn't officially supported, but using the "GitHub webhook" is an effective workaround,
-   because Gitea uses the same payload as GitHub. The generic webhook is not compatible with Gitea.
-   See for more details. Official support may be implemented in the future.
+    ipmitool raw 0x3c 0x01 0xb4 0x 0x5d 0xe2 0x9a 0x99
 
 Parameters
 ~~~~~~~~~~
