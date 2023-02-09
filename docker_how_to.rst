@@ -12,9 +12,9 @@ Dockerfile
   LABEL maintainer="HuyLe <anhhuy@live.com>"
   # Set Environment variables and Argument defaults.
   ENV HOME /root
-  ARG BMC_IP=10.38.xx.xx
+  ARG BMC_IP=192.168.10.9
   ARG USER_NAME=root
-  ARG PASS_WORD=0penBmc
+  ARG PASS_WORD=root
   ENV DEBIAN_FRONTEND noninteractive
   # Define working directory.
   WORKDIR /root/dcmi/Source
