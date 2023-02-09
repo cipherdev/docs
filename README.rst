@@ -20,11 +20,6 @@ such as GitHub, GitLab, or Bitbucket.
 Integration Creation
 --------------------
 
-If you have :doc:`connected your Read the Docs account </connected-accounts>` to GitHub, Bitbucket, or GitLab,
-**an integration will be set up automatically for your repository**. However, if your
-project was not imported through a connected account, you may need to
-manually configure an integration for your project.
-
 To manually set up an integration, go to :guilabel:`Admin` > :guilabel:`Integrations` >  :guilabel:`Add integration`
 dashboard page and select the integration type you'd like to add.
 After you have added the integration, you'll see a link to information about the integration.

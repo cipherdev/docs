@@ -94,26 +94,6 @@ the list of extensions in the ``conf.py`` file:
   extensions = ['sphinx.ext.autosectionlabel',
                 'sphinxcontrib.osexample']
 
-.. code-block:: RST
-
-  .. example-code::
-
-    .. code-block:: JSON
-
-      {
-        "key": "value"
-      }
-
-    .. code-block:: python
-
-      pygments_style = 'sphinx'
-
-    
-    .. code-block:: ruby
-
-      print "Hello, World!\n"
-
-
 Examples 
 ***********************
 
