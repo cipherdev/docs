@@ -1,32 +1,33 @@
 OpenBmc How To
 ==============
 
-Modified Source & Compile
--------------------------
-OpenBmc Compile
-~~~~~~~~~~~~~~~~~~~~~~~
+Source & Compile
+----------------
 
-Bitbake Compile::
+Bitbake Compile
+~~~~~~~~~~~~~~~
+
+* Commands::
 
     . setup <platform> <folder_build>
     bitbake obmc-phosphor-image
 
-From bb File
-~~~~~~~~~~~~
+BB File Compile
+~~~~~~~~~~~~~~~
 
-For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://github.com/openbmc/webui-vue/>`__
+* For example, modify source ``webui-vue`` from repo: `GitHub Webui-Vue <https://github.com/openbmc/webui-vue/>`__
 
-Bellow, edit file :guilabel:`openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb`::
+* Bellow, edit file :guilabel:`openbmc/meta-phosphor/recipes-phosphor/webui/webui-vue_git.bb`::
 
     SRC_URI = "git://<path>/webui-vue;protocol=file;branch=<name_of_branch>"
     SRCREV = "${AUTOREV}"
 
 .. Note:: Can be replace by **commitID** by: ``SRCREV = "<commit_id>"``, with ``SRCREV = "${AUTOREV}"`` will get the latest code to compile.
 
-Use devtool Tool
-~~~~~~~~~~~~~~~~
+Devtool Tool 
+~~~~~~~~~~~~
 
-For example::
+* For example::
   
     devtool modify obmc-phosphor-buttons 
     devtool reset obmc-phosphor-buttons
