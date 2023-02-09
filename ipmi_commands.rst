@@ -94,8 +94,6 @@ the list of extensions in the ``conf.py`` file:
   extensions = ['sphinx.ext.autosectionlabel',
                 'sphinxcontrib.osexample']
 
-Then, to show multiple code examples with tabs, embed the code blocks under the ``.. example-code::`` directive.  The text for the code block example above is:
-
 .. code-block:: RST
 
   .. example-code::

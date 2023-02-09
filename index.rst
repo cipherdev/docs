@@ -30,8 +30,8 @@ Docker How To
    docker_compose
    docker_swam
 
-Work with |Notes| Content
-***********************
+Work with Content
+*****************
 
 .. toctree::
    :maxdepth: 1
@@ -40,7 +40,7 @@ Work with |Notes| Content
    tables
 
 Deliver Documentation
-***********************
+**********************
 
 .. toctree::
    :maxdepth: 1

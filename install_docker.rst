@@ -33,8 +33,6 @@ example:
 You can list all glossary terms under a single Glossary directive, or use
 multiple Glossary directives.
 
-For more information, see the :xref:`Sphinx Glossary`.
-
 
 Link a Term to its a Glossary Entry
 *************************************
