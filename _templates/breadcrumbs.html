@@ -1,0 +1,9 @@
+{%- extends "sphinx_rtd_theme/breadcrumbs.html" %}
+{%- if meta is defined and meta is not none %}
+   {%- set check_meta = True %}
+{%- else %}
+   {%- set check_meta = False %}
+{%- endif %}
+
+{% block breadcrumbs_aside %}
+{% endblock %}
