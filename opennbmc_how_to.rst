@@ -55,8 +55,15 @@ Sensor sdr list
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus sdr list all
 
-Chassis Power Handle
-~~~~~~~~~~~~~~~~~~~~
+Chassis BMC Reset Handle
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Command:
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus mc reset cold
+
+Chassis Power HOST Handle
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Commands::
 
