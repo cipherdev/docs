@@ -64,40 +64,52 @@ Chassis Power Handle
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power off
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis power on
 
-Set Policy Power Always-on via IPMI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Policy Power Always-on/off/previous via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Command::
+* Commands::
 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy always-on
-
-Set Policy Power Always-off via IPMI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-* Command::
-
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy always-off
-
-Set Policy Power is previous via IPMI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-* Command:
-
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus chassis policy previous
 
-Set SOL activate via IPMI
-~~~~~~~~~~~~~~~~~~~~~~~~~
+SOL via IPMI
+~~~~~~~~~~~~
 
-* Command:
+* Commands::
 
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 sol info 
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 sol activate instance=1
-
-Set SOL deactivate via IPMI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-* Command:
-
     ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 sol deactivate instance=1
+
+Read Write via IPMI
+~~~~~~~~~~~~~~~~~~~
+
+* Example::
+
+    # Write 0x1EF to register offset 0x53
+    $ ipmitool raw 0x3c 0x18 0x00 0x53 0xEF 0x01
+    # Read the register offset 0x53
+    $ ipmitool raw 0x3c 0x17 0x00 0x53
+
+Turn On UID LED via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Command::
+    
+    ipmitool chassis identify
+
+Power_limit via IPMI
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Get Power_limit::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 dcmi power get_limit
+
+* Change Power_limit::
+
+    ipmitool -H <bmc_ip> -U <user> -P <pass> -C 17 -I lanplus -C 17 dcmi power set_limit limit <value>
+
 
 ----------------
 
