@@ -8,11 +8,10 @@ Remove an file to Commit
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: file_rm
-    git reset --soft HEAD^ 
-    or
-    git reset --soft HEAD~1
 
-Then reset the unwanted files in order to leave them out from the commit (the old way):
+    git reset --soft HEAD~1  #or git reset --soft HEAD^
+
+Then reset the unwanted files in order to leave them out from the commit::
 
     git reset HEAD path/to/unwanted_file
 
