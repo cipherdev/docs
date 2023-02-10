@@ -41,5 +41,6 @@ Deliver Documentation
    OpenBmc
    Docker
    Git
+   tables
 
 .. add new files to list above to include them in toc

@@ -1,25 +1,26 @@
 Git How To
-##########
+==========
 
-.. code-block:: bash
-   
-   .PHONY: html
-   html:
-    $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)
-    @echo
-    @echo "Build finished. The HTML pages are in $(BUILDDIR)."
- 
-Test
+Git Commands
+------------
 
-.. code-block:: bash
-  :emphasize-lines: 3
+Remove an file to Commit
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-  .PHONY: internalhtml
-   internalhtml:
-    $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -t Internal $(INTERNALBUILDDIR)
-    @echo
-    @echo "Build finished. The HTML pages are in $(INTERNALBUILDDIR)."
+.. code-block:: file_rm
+    git reset --soft HEAD^ 
+    or
+    git reset --soft HEAD~1
 
-.. note:: This docker compose page.
+Then reset the unwanted files in order to leave them out from the commit (the old way):
+
+    git reset HEAD path/to/unwanted_file
+
+.. Note:: That since Git 2.23.0 one can (the new way)::
+    git restore --staged path/to/unwanted_file
+
+Now commit again, you can even re-use the same commit message::
+
+    git commit -c ORIG_HEAD  
 
 
