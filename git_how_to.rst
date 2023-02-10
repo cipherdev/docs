@@ -15,8 +15,7 @@ Then reset the unwanted files in order to leave them out from the commit::
 
     git reset HEAD path/to/unwanted_file
 
-.. Note:: That since Git 2.23.0 one can (the new way)::
-    git restore --staged path/to/unwanted_file
+.. Note:: That since Git 2.23.0 one can (the new way): git restore --staged path/to/unwanted_file
 
 Now commit again, you can even re-use the same commit message::
 
