@@ -50,6 +50,7 @@ Set BMC MAC Address
 * Command - Example MACAddr b4:05:5d:e2:9a:87::
 
     ipmitool raw 0x3c 0x01 0xb4 0x5 0x5d 0xe2 0x9a 0x87
+    ipmitool fru edit 1 field b 5 B4:05:5D:E2:9A:87
 
 Sensor sdr list
 ~~~~~~~~~~~~~~~
