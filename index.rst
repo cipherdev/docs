@@ -48,6 +48,7 @@ SERVER HOW TO
    :maxdepth: 1
 
    server_dhcp
+   server_packages
    server_ser2net_mapping_port_to_telnet
 
 .. add new files to list above to include them in toc

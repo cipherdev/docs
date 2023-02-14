@@ -34,7 +34,7 @@ Command::
     arp -a
 
 DD ISO File
-~~~~~~~~~~~~~~
+~~~~~~~~~~~
 Command::
 
     sudo dd if=file.iso of=/dev/sdx bs=1024k status=progress
