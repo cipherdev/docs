@@ -13,6 +13,9 @@ Install Jenkin
     sudo apt update
     sudo apt install jenkins
 
+.. warning:: Delete jenkins: service jenkins stop; apt-get remove --purge jenkins
+
+
 Starting Jenkins
 ~~~~~~~~~~~~~~~~
 Commands::
