@@ -1,4 +1,4 @@
-KEA TOOL DHCP SERVER
+Kea Tool DHCP Server
 ====================
 
 KEA Commands
@@ -6,15 +6,15 @@ KEA Commands
 
 Install KEA Tool
 ~~~~~~~~~~~~~~~~
-
 .. code-block:: kea
 
     yum update -y
     yum install -y epel-release.noarch
     sudo yum -y install kea
 
-Restart DHCP KEA::
+Restart DHCP KEA
 ~~~~~~~~~~~~~~~~
+Commands::
 
     systemctl status kea-dhcp4.service
     systemctl stop kea-dhcp4.service
@@ -22,13 +22,15 @@ Restart DHCP KEA::
     systemctl start kea-dhcp4.service
 
 Log Release DHCP IP
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+Command::
 
     tail -f /var/log/kea-dhcp4.log
 
-MACAddress ReleaseIP::
+MACAddress ReleaseIP
 ~~~~~~~~~~~~~~~~~~~~
-    
+Command::
+
     arp -a
 
 
