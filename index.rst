@@ -8,7 +8,7 @@ This project is also created using the guidelines it describes.
 
 This document is geared towards content creators, not programmers.
 
-OpenBmc How To
+OPENBMC HOW TO
 **************
 
 .. toctree::
@@ -16,7 +16,7 @@ OpenBmc How To
 
    opennbmc_how_to
 
-Docker How To
+DOCKER HOW TO
 *************
 
 .. toctree::
@@ -24,7 +24,7 @@ Docker How To
 
    docker_how_to
 
-Git How To
+GIT HOW TO
 **********
 
 .. toctree::
@@ -32,15 +32,22 @@ Git How To
 
    git_how_to
 
-Deliver Documentation
-**********************
+JENKINS HOW TO
+**************
 
 .. toctree::
    :maxdepth: 1
 
-   OpenBmc
-   Docker
-   Git
-   tables
+   jenkin_install
+   jenkin_command
+
+SERVER HOW TO
+*************
+
+.. toctree::
+   :maxdepth: 1
+
+   server_dhcp
+   server_ser2net_mapping_port_to_telnet
 
 .. add new files to list above to include them in toc
