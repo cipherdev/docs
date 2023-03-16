@@ -32,6 +32,10 @@ Install Jenkin
 
 .. note:: refer from: https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-22-04
 
+Plugins:
+Command Agent Launcher
+
+
 Starting Jenkins
 ~~~~~~~~~~~~~~~~
 Commands::
